@@ -8,8 +8,8 @@ public class Movie {
     String Year;
     String Desc;
     String Cast;
-    String Director;
     String Halls;
+    String Director;
     String ImageLink;
     String Link;
 
