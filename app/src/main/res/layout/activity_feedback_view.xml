@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".FeedbackView">
+
+
+    <Button
+        android:id="@+id/tvbtn_2"
+        android:layout_width="291dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="feedbackDelete"
+        android:text="Delete"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="?android:attr/windowTitleSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <TextView
+        android:id="@+id/feedbackheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Update Movie Details"
+        android:textColor="#0B0B0B"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/full_name"
+        android:layout_width="341dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Enter Movie Name"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedbackheader"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="343dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="Enter Movie Cast"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/full_name"
+        app:layout_constraintVertical_bias="0.465" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="341dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="Enter Movie Director"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/full_name" />
+
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="69dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:text="Rating"
+        android:textColor="#101010"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <RatingBar
+        android:id="@+id/stars_bar"
+        android:layout_width="238dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="52dp"
+        android:progressBackgroundTint="#F76E11"
+        android:progressTint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/rate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="349dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter the description"
+        android:inputType="textMultiLine"
+        android:textColor="#0C0C0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_11"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_11"
+        android:layout_width="349dp"
+        android:layout_height="36dp"
+        android:text="Description"
+        android:textColor="#101010"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rate"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <Button
+        android:id="@+id/tvbtn_06"
+        android:layout_width="291dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="76dp"
+        android:onClick="feedbackDelete"
+        android:text="Delete"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/blue"
+        app:cornerRadius="?android:attr/windowTitleSize"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <Button
+        android:id="@+id/tvbtn_"
+        android:layout_width="291dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="feedbackDelete"
+        android:text="Delete"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="?android:attr/windowTitleSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <Button
+        android:id="@+id/tvbtn_05"
+        android:layout_width="291dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:onClick="feedbackUpdate"
+        android:text="Update"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="?android:attr/windowTitleSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="192dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="125dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="feedbackUpdate"
+        android:text="Back"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="?android:attr/windowTitleSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

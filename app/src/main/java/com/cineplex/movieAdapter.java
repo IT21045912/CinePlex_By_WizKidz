@@ -67,7 +67,7 @@ public class movieAdapter extends RecyclerView.Adapter<movieAdapter.myViewHolder
             super(itemView);
 
             movieName = itemView.findViewById(R.id.movieName);
-            movieYear = itemView.findViewById(R.id.movieCast);
+            movieYear = itemView.findViewById(R.id.movieYear);
             movieCast = itemView.findViewById(R.id.movieCast);
             movieHalls = itemView.findViewById(R.id.movieHalls);
             updateBtn = itemView.findViewById(R.id.btnupdate);
