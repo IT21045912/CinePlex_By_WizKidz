@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "869673361681",
+    "firebase_url": "https://cineplex-b4028-default-rtdb.firebaseio.com",
+    "project_id": "cineplex-b4028",
+    "storage_bucket": "cineplex-b4028.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869673361681:android:556f6da30e513e1201acb0",
+        "android_client_info": {
+          "package_name": "com.cineplex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869673361681-rhqjaha0lh27ild2obbrjs7o6hr102cg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl_Z6dUz3aqOZa9CKsmH3IF0zpS6Z20gA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869673361681-rhqjaha0lh27ild2obbrjs7o6hr102cg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

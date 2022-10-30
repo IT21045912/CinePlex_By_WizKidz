@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:textAlignment="center">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="416dp"
+        android:layout_height="56dp"
+        android:background="#1E1E1E"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="99dp"
+            android:layout_height="29dp"
+
+            app:srcCompat="@drawable/logo1"></ImageView>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Credit Card"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"></TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.015"
+        tools:srcCompat="@tools:sample/avatars"></ImageView>
+        //profileic>
+
+
+    /creaditcard/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="156dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/imageView4"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="SELECT PAYMENT MODE"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="70dp"></EditText>
+        //selectpymnt>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lnr2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextTextPersonName">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="70dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/editTextTextPersonName"
+
+        app:srcCompat="@drawable/mc"
+        ></ImageView>
+        //visa>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="70dp"
+        android:layout_height="46dp"
+        android:layout_below="@id/editTextTextPersonName"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/imageView7"
+        app:srcCompat="@drawable/visa"></ImageView>
+
+    </LinearLayout>
+        //master>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="381dp"
+        android:layout_height="372dp"
+        android:layout_below="@id/lnr2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#6da6ad"></View>
+        //view>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="134dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/lnr2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="ADD CARD DETAILS"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/CardNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTextPersonName6"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="CARD NUMBER"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CardNo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="MM/YY"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/cvv"
+        android:layout_width="154dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/CardNo"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/date"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="CVV"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="355dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/cvv"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="CARD HOLDER NAME"
+        android:textColor="#000000"
+        android:textSize="14sp"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/vm" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/imageView"
+    android:id="@+id/lnr"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp">
+
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/imageView"
+        app:srcCompat="@drawable/check_box"
+        />
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:text="Agree to Terms and Conditions"
+        android:textSize="14sp"
+         />
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/confrimPayment"
+        android:layout_width="236dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/lnr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#FF0D8FCA"
+        android:text="CONFIRM PAYMENT"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="236dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/confrimPayment"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FF0D8FCA"
+        android:text="EDIT CARD DETAILS"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/button5"
+        android:layout_marginTop="-80dp"
+        android:layout_marginRight="-198dp"
+        android:layout_toLeftOf="@id/editTextTextPersonName6"
+        app:srcCompat="@drawable/drop_down_arrow" />
+
+
+</RelativeLayout>
