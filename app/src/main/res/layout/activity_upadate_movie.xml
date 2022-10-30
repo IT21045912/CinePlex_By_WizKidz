@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".upadate_movie">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="CinePlex" />
+
+
+    <TextView
+        android:id="@+id/Topic"
+        android:layout_width="match_parent"
+        android:paddingTop="5dp"
+        android:layout_height="40dp"
+        android:text="UPDATE MOVIE"
+        android:background="@color/black"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Topic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:ems="15"
+        android:hint="Enter Movie Name :"
+        android:inputType="textPersonName"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="15"
+        android:hint="Released Year :"
+        android:inputType="textPersonName"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Year"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:hint="Description :"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Cast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Desc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:hint="Cast :"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/Director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Cast"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:hint="Director :"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Halls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Director"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:hint="Available Halls :"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Halls"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:hint="Trailer Link :"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Link"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:hint="Image Link :"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/UPDATEBTN"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/Image"
+        android:text="UPDATE"
+        android:backgroundTint="@color/black"/>
+
+</RelativeLayout>
